@@ -83,6 +83,112 @@ body{
 .menu-icon{
     display: none;
 }
+/*hero design*/
+.hero-container{
+    border: 2px solid red;
+    min-height: 400 px;
+    padding: 10px;
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hero-top{
+    border: 2px solid green;
+    min-height: 200px;
+    width: 35%;
+}
+.hero-bottom{
+    border: 2px solid blue;  
+    min-height: 200px;  
+    width: 35%;
+}
+.hero-bottom h1{
+    font-size: 60px;
+    font-weight: 800;
+}
+.hero-bottom p{
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.8;
+    margin-top: 8px;
+    margin-bottom: 28px;
+}
+.hero-button{
+    border: 2px solid pink;  
+    min-height: 200px; 
+    width: 35%;
+}
+
+
+/*Footer styling*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 20px;
+    text-align: center;
+    position: relative;
+    min-height: 300px;
+}
+
+.footer-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.footer::before{
+    display: none;
+}
+
+.footer h2{
+    font-size: 56px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+}
+
+.social-links{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+.social-links a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #ddd;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-links a:hover{
+    color: #fff;
+}
+
+.social-links img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.footer p{
+    font-size: 14px;
+    color: #888;
+    position: relative;
+    z-index: 2;
+}
 
 /* Mobile responsive layout*/
 @media screen and (max-width: 576px){
@@ -100,5 +206,4 @@ body{
         font-size: 20px;
         cursor: pointer;
     }
-
 }
